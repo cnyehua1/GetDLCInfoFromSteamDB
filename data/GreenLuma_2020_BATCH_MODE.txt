@@ -1,7 +1,4 @@
 @ECHO OFF
-set CommandLine=-login xxx xxx
-(for /f "tokens=*" %%i in (DLLInjector.ini) do echo %%i|findstr /ib "CommandLine =">nul&&echo CommandLine = %CommandLine%||echo %%i)>temp.ini
-move /y temp.ini DLLInjector.ini
 :: WINDOWS WORKING DIR BUG WORKAROUND
 CD /D "%~dp0"
 :: CHECK APPLIST DIR
@@ -14,6 +11,9 @@ ECHO [steamdb]appID[/steamdb]> .\\AppList\\0.txt
 ECHO Launching [steamdb]name[/steamdb]
 TASKKILL /F /IM steam.exe
 TIMEOUT /T 2
+set CommandLine=-login xxx xxx
+(for /f "tokens=*" %%i in (DLLInjector.ini) do echo %%i|findstr /ib "CommandLine =">nul&&echo CommandLine = %CommandLine%||echo %%i)>temp.ini
+move /y temp.ini DLLInjector.ini
 DLLInjector.exe -DisablePreferSystem32Images
 :EXIT
 EXIT
