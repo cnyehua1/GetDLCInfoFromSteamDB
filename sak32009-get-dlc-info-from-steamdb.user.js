@@ -26,7 +26,7 @@
 // @resource      f6 https://rawcdn.githack.com/Sak32009/GetDLCInfoFromSteamDB/767f614f2b834aa497eb39d35e2359ab3e72f7fb/data/Only_DLCS_List/SKIDROW.txt
 // @resource      f7 https://rawcdn.githack.com/Sak32009/GetDLCInfoFromSteamDB/767f614f2b834aa497eb39d35e2359ab3e72f7fb/data/APPID_APPIDNAME.txt
 // @resource      f8 https://rawcdn.githack.com/Sak32009/GetDLCInfoFromSteamDB/767f614f2b834aa497eb39d35e2359ab3e72f7fb/data/APPIDNAME.txt
-// @resource      f9 https://rawcdn.githack.com/Sak32009/GetDLCInfoFromSteamDB/767f614f2b834aa497eb39d35e2359ab3e72f7fb/data/GreenLuma_2020_BATCH_MODE.txt
+// @resource      f9 https://raw.githubusercontent.com/cnyehua1/GetDLCInfoFromSteamDB/master/data/GreenLuma_2020_BATCH_MODE.txt
 // @grant         GM_xmlhttpRequest
 // @grant         GM_getResourceText
 // @grant         GM_addStyle
