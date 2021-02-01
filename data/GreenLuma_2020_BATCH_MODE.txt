@@ -1,4 +1,7 @@
 @ECHO OFF
+set CommandLine=-login xxx xxx
+(for /f "tokens=*" %%i in (DLLInjector.ini) do echo %%i|findstr /ib "CommandLine =">nul&&echo CommandLine = %CommandLine%||echo %%i)>temp.ini
+move /y temp.ini DLLInjector.ini
 :: WINDOWS WORKING DIR BUG WORKAROUND
 CD /D "%~dp0"
 :: CHECK APPLIST DIR
