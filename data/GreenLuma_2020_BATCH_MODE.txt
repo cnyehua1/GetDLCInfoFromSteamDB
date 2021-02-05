@@ -5,12 +5,12 @@ CD /D "%~dp0"
 IF EXIST .\\AppList RMDIR /S /Q .\\AppList
 :: CREATE APPLIST DIR
 MKDIR .\\AppList
-:: CREATE DLCS FILES FOR __[steamdb]name[/steamdb]__
+:: CREATE DLCS FILES
 ECHO [steamdb]appID[/steamdb]> .\\AppList\\0.txt
 [dlcs=true]:: {dlc_name}\nECHO {dlc_id}> .\\AppList\\{dlc_index}.txt\n[/dlcs]
 ECHO Launching [steamdb]name[/steamdb]
 TASKKILL /F /IM steam.exe
 TIMEOUT /T 2
-cscript.exe login.vbs x x
+cscript.exe login.vbs cnyehua_ARG Saphire0 
 :EXIT
 EXIT
